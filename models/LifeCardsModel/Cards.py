@@ -82,11 +82,11 @@ order = cards.order_for_36
 shuffled_cards = cards.shuffle_cards(order)
 
 hand = select_random_items(shuffled_cards, 7)
-opened = randomItemFromList(shuffled_cards)
+opened = shuffled_cards[-1]
 
 print('Opened card:', opened)
 print()
 print('Your hand:')
-for i in hand:
+for i in order:
     print(i)
 
