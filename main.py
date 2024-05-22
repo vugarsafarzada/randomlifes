@@ -9,4 +9,4 @@ family = Family().data();
 human = Human(from_family=family).data()
 
 
-print(json.dumps(human, indent=4))
+print(json.dumps(human, indent=4, ensure_ascii=False))
