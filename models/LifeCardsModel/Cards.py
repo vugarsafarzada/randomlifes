@@ -87,6 +87,6 @@ opened = shuffled_cards[-1]
 print('Opened card:', opened)
 print()
 print('Your hand:')
-for i in order:
+for i in hand:
     print(i)
 
