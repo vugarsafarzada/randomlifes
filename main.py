@@ -1,7 +1,6 @@
 import json
-from models.Human import Human
-from models.Family import Family
-from assets.helper_methods import randomItemFromList, biographyText, biographyText1, biographyText2, biographyText3, biographyText4
+from models.HumanModel.Human import Human
+from models.HumanModel.Family import Family
 import os
 os.system('clear')
 

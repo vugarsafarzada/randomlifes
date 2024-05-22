@@ -1,6 +1,7 @@
 import random
 from datetime import datetime
 
+
 def randomNumberBetween(lower: int, upper: int) -> int:
     return random.randint(lower, upper)
 
@@ -145,6 +146,7 @@ def biographyText3(person_data):
 
     return biography
 
+
 def biographyText4(person_data):
     # Extract personal information
     first_name = person_data['personal_info']['first_name']
@@ -188,6 +190,7 @@ def biographyText4(person_data):
                  f"Together, {father_first_name} and {mother_first_name} will raise {first_name} in {city}, instilling in {possessive_pronoun} the values and traditions of their diverse backgrounds.")
 
     return biography
+
 
 def biographyText(person_data):
     # Extract personal information
@@ -245,3 +248,18 @@ def randomBiographyText(human):
         biographyText4(human),
     ]
     return randomItemFromList(biographies)
+
+
+def shuffle_array(arr):
+    n = len(arr)
+    for i in range(n - 1, 0, -1):
+        j = random.randint(0, i)
+        arr[i], arr[j] = arr[j], arr[i]
+    return arr
+
+
+def select_random_items(arr, num_items=6):
+    if len(arr) < num_items:
+        raise ValueError("The array does not have enough items to select from.")
+
+    return random.sample(arr, num_items)

@@ -1,5 +1,5 @@
-from models.Human import Human
-from assets.helper_methods import randomBoolean, randomItemFromList, randomNumberBetween
+from models.HumanModel.Human import Human
+from assets.helper_methods import randomItemFromList, randomNumberBetween
 
 
 class Family:

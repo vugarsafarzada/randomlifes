@@ -1,5 +1,5 @@
-from models.Person import Person
-from models.Environment import Environment
+from models.HumanModel.Person import Person
+from models.HumanModel.Environment import Environment
 
 
 class Human:

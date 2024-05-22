@@ -1,5 +1,4 @@
-from models.Family import Family
-from models.Person import Person
+from models.HumanModel.Family import Family
 
 
 class Relationships:
